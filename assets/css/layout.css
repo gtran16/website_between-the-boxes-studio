@@ -1,0 +1,58 @@
+/* ==========================================================================
+   Layout: containers, sections, and the big color bands
+   ========================================================================== */
+
+.container {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+.section { padding-top: var(--space-section); }
+.section--pad { padding-top: var(--space-section); padding-bottom: var(--space-section); }
+.section--end { padding-bottom: var(--space-section); }
+
+.section--night { background: var(--night); color: var(--paper); }
+.section--deep  { background: var(--violet-deep); color: var(--paper); }
+.section--yellow { background: var(--yellow); color: var(--ink); border-top: 1px solid var(--ink); }
+
+/* Section heading row: title on the left, intro on the right */
+.section-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 20px 40px;
+  margin-bottom: 40px;
+}
+.section-head__intro { max-width: 420px; }
+.section-head .label { margin-bottom: 22px; }
+
+/* Two columns that stack on small screens */
+.split {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 80px;
+}
+.split > * { flex: 1 1 420px; }
+.split__end { align-self: flex-end; }
+
+/* Rule with the boxes mark sitting in the gap */
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-top: 96px;
+  padding-bottom: 56px;
+}
+.divider::before, .divider::after {
+  content: "";
+  flex: 1;
+  border-top: 1px solid var(--ink);
+}
+.divider img { width: 32px; height: auto; }
+
+.rule-top { border-top: 1px solid var(--ink); }
+
+.split--spaced { margin-bottom: 56px; }
+.section-head--spaced { margin-bottom: 56px; }

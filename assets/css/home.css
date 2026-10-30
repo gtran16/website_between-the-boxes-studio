@@ -1,0 +1,239 @@
+/* ==========================================================================
+   Homepage sections, in page order
+   ========================================================================== */
+
+/* ---------- Hero ---------- */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 56px;
+  align-items: stretch;
+  padding-top: 40px;
+  padding-bottom: 72px;
+}
+.hero__main {
+  flex: 1.35 1 560px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 44px;
+}
+.hero__name { font-size: 24px; margin-bottom: 8px; }
+.hero__foot { display: flex; flex-wrap: wrap; gap: 24px 40px; align-items: flex-end; }
+.hero__intro { max-width: 460px; font-size: 19px; color: var(--muted); margin: 0; }
+
+/* Print-style art panel with typewriter strips on top */
+.print-panel {
+  flex: 1 1 380px;
+  position: relative;
+  min-height: 560px;
+  margin: 0;
+  border-radius: 6px;
+  overflow: hidden;
+  background: url("../img/print-panel.svg") center / cover no-repeat;
+}
+.print-panel .strip { position: absolute; font-size: 24px; }
+.print-panel__strip--1 { left: 28px; top: 40px; }
+.print-panel__strip--2 { left: 150px; top: 96px; transform: rotate(3deg); }
+.print-panel__strip--3 { left: 46px; top: 170px; transform: rotate(-1deg); }
+.print-panel__strip--4 { right: 32px; bottom: 120px; font-size: 26px; transform: rotate(-4deg); }
+.print-panel__strip--5 { right: 58px; bottom: 66px; font-size: 17px; transform: rotate(2deg); }
+.print-panel figcaption { position: absolute; left: 20px; bottom: 16px; opacity: .85; }
+
+/* ---------- The pattern (dark) ---------- */
+.pattern {
+  position: relative;
+  overflow: hidden;
+}
+.pattern::before {
+  content: "";
+  position: absolute;
+  top: 0; bottom: 0; right: 0;
+  width: 46%;
+  background: url("../img/wavy-lines.svg") center / cover no-repeat;
+  opacity: .5;
+  pointer-events: none;
+}
+.pattern .container { position: relative; }
+.pattern__title { margin-bottom: 28px; }
+.pattern__title em { color: var(--yellow); }
+.pattern__intro { color: var(--on-dark); font-size: 19px; max-width: 480px; }
+.pattern__list { list-style: none; margin: 0; padding: 0; align-self: flex-end; }
+.pattern__list li {
+  display: flex;
+  gap: 18px;
+  padding: 18px 0;
+  border-top: 1px solid var(--rule-dark);
+}
+.pattern__list li:last-child { border-bottom: 1px solid var(--rule-dark); }
+.pattern__list .label { padding-top: 4px; }
+
+/* ---------- Offers ---------- */
+.offers { border-top: 1px solid var(--ink); }
+.offer { border-bottom: 1px solid var(--ink); }
+.offer__summary {
+  list-style: none;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: 60px 1fr auto 44px;
+  gap: 18px;
+  align-items: start;
+  padding: 28px 0;
+}
+.offer__summary::-webkit-details-marker { display: none; }
+.offer__num, .offer__duration { color: var(--violet-deep); padding-top: 12px; }
+.offer__name { font-size: clamp(1.7rem, 3.2vw, 2.8rem); }
+.offer__badge { margin-left: 14px; font-size: var(--text-small); vertical-align: middle; }
+.offer__pitch { display: block; margin-top: 8px; font-size: 18px; color: var(--muted); }
+.offer__summary:hover .offer__name { color: var(--violet-deep); }
+.toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px; height: 40px;
+  border: 1px solid var(--ink);
+  border-radius: 50%;
+  font-family: var(--font-label);
+  font-size: 22px;
+  line-height: 1;
+  transition: transform .2s;
+}
+details:hover > summary .toggle, details[open] > summary .toggle { background: var(--yellow); }
+details[open] > summary .toggle { transform: rotate(45deg); }
+.offer__body {
+  display: grid;
+  grid-template-columns: 60px repeat(3, 1fr) 44px;
+  gap: 28px;
+  padding: 0 0 34px;
+}
+.offer__body > div:first-child { grid-column: 2; }
+.offer__body h4 { margin: 0 0 8px; font-weight: 400; }
+.offer__body ul { margin: 0; padding-left: 18px; font-size: var(--text-small); }
+.offer__body li { margin-bottom: 4px; }
+.offer__cta { grid-column: 2 / span 3; padding-top: 6px; }
+
+.not-sure {
+  display: grid;
+  grid-template-columns: 60px 1fr auto;
+  gap: 8px 24px;
+  align-items: center;
+  padding: 30px 0 6px;
+}
+.not-sure > p { grid-column: 2; margin: 0; }
+.not-sure > .btn { grid-column: 3; grid-row: 1 / span 2; }
+
+@media (max-width: 760px) {
+  .offer__summary { grid-template-columns: 30px 1fr 40px; }
+  .offer__duration { display: none; }
+  .offer__body { grid-template-columns: 1fr; }
+  .offer__body > div:first-child, .offer__cta { grid-column: 1; }
+  .not-sure { grid-template-columns: 1fr; }
+  .not-sure > * { grid-column: 1 !important; grid-row: auto !important; }
+}
+
+/* ---------- How I work ---------- */
+.steps { display: flex; flex-wrap: wrap; gap: 36px; margin: 64px 0 0; padding: 0; list-style: none; }
+.step { flex: 1 1 260px; }
+.step__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px; height: 54px;
+  border: 2.2px solid var(--ink);
+  border-radius: 4px 7px 5px 6px;
+  transform: rotate(-2deg);
+  font-family: var(--font-label);
+  font-weight: 700;
+  font-size: 24px;
+}
+.step:last-child .step__box { background: var(--yellow); }
+.step__title { font-size: 36px; margin: 22px 0 12px; }
+
+/* ---------- Experience, backed by science ---------- */
+.principles { display: flex; flex-wrap: wrap; border-top: 1px solid var(--ink); }
+.principle { flex: 1 1 250px; padding: 26px 28px; border-left: 1px solid var(--rule); }
+.principle:first-child { padding-left: 0; border-left: none; }
+.principle:last-child { padding-right: 0; }
+.principle__title { font-size: 28px; margin-bottom: 10px; }
+.principle p { color: var(--muted); }
+
+/* ---------- Big wins ---------- */
+.wins { display: flex; flex-wrap: wrap; gap: 16px; }
+.win {
+  flex: 1 1 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 22px;
+  text-decoration: none;
+  color: var(--paper);
+  padding: 28px;
+  border: 1px solid rgba(255, 255, 255, .45);
+  border-radius: var(--radius);
+  transition: background .15s, transform .15s, color .15s;
+}
+.win:hover { background: var(--yellow); color: var(--ink); transform: translateY(-3px); }
+.win__num { font-size: 66px; color: var(--yellow); }
+.win .label { margin: 14px 0 10px; color: var(--on-deep); font-size: var(--text-caption); }
+.win:hover .win__num, .win:hover .label { color: var(--violet-deep); }
+.win__text { margin: 0; font-size: var(--text-small); }
+.win__go { font-weight: 600; font-size: 16px; border-bottom: 1px solid currentColor; align-self: flex-start; }
+.wins-more { margin-top: 44px; }
+
+/* ---------- Testimonial ---------- */
+.testimonial {
+  margin: 0;
+  padding: 40px 44px;
+  border: 1px dashed var(--violet-deep);
+  border-radius: var(--radius);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px 48px;
+  align-items: center;
+}
+.testimonial blockquote { flex: 1 1 520px; margin: 0; font-size: clamp(1.6rem, 2.8vw, 2.4rem); line-height: 1.2; }
+.testimonial figcaption { flex: 0 1 280px; }
+
+/* ---------- About ---------- */
+.about__inner { border-top: 1px solid var(--ink); padding-top: 100px; }
+.about__inner { display: flex; flex-wrap: wrap; gap: 48px 80px; align-items: flex-start; }
+.portrait { flex: 0 1 380px; margin: 0; position: relative; }
+.portrait__frame {
+  aspect-ratio: 4 / 5;
+  background: #E6DDEF;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transform: rotate(-1.5deg);
+  box-shadow: 0 12px 30px rgba(30, 19, 40, .16);
+}
+.portrait__frame img { width: 100%; height: 100%; object-fit: cover; border-radius: 4px; }
+.portrait .strip { position: absolute; right: -14px; bottom: 28px; font-size: var(--text-small); }
+.about__text { flex: 1 1 520px; }
+.about__text h2 { margin: 22px 0 30px; }
+.about__body { max-width: 640px; color: var(--muted); }
+
+/* ---------- Thoughts ---------- */
+.talks { list-style: none; margin: 0; padding: 0; }
+.talks li {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+/* ---------- Contact ---------- */
+.contact__title { font-size: clamp(3rem, 7.6vw, 7.4rem); max-width: 1200px; margin-bottom: 36px; }
+.contact__row { display: flex; flex-wrap: wrap; gap: 20px 40px; align-items: center; }
+.contact__note { max-width: 480px; }
+
+/* ---------- Small section tweaks ---------- */
+.pattern .label { margin-bottom: 26px; }
+.wins__title { font-size: clamp(3.2rem, 8vw, 7.6rem); }
+.wins__title em { color: var(--yellow); }
+.wins__intro { color: var(--on-deep); }
+.thoughts__label { margin: 22px 0 16px; }
+.thoughts__status { margin-top: 10px; }

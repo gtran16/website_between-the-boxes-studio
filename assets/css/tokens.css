@@ -1,0 +1,54 @@
+/* ==========================================================================
+   Design tokens: Between the Boxes
+   Change colors, fonts, and sizes here and they update everywhere.
+   ========================================================================== */
+
+:root {
+  /* Color */
+  --ink: #1E1328;          /* body text */
+  --cream: #F3EEE4;        /* page background */
+  --paper: #FBF8F2;        /* tiles, cards, panels */
+  --strip: #F8F2DF;        /* typewriter strips */
+  --lavender: #EAE1F0;     /* case file bands, soft panels */
+  --violet-deep: #5E2E8F;  /* brand color: headings, links, labels */
+  --violet: #9C59D1;       /* accents only, never body text */
+  --yellow: #FCF434;       /* highlight; never text on light backgrounds */
+  --night: #22132F;        /* dark sections, footer */
+  --muted: #55505C;        /* secondary text */
+  --on-dark: #D8CCE6;      /* secondary text on night */
+  --on-dark-strong: #EADFF5;
+  --on-deep: #E5D9F3;      /* secondary text on violet deep */
+  --rule: rgba(30, 19, 40, .22);
+  --rule-dark: rgba(255, 255, 255, .28);
+
+  /* Type */
+  --font-display: 'Fraunces', 'Fraunces Variable', Georgia, serif;
+  --font-body: 'Instrument Sans', system-ui, sans-serif;
+  --font-label: 'Courier Prime', ui-monospace, monospace;
+  --font-strip: 'Special Elite', 'Courier Prime', monospace;
+
+  /* Minimum sizes (accessibility): body 18, supporting 17, labels 15 */
+  --text-body: 18px;
+  --text-small: 17px;
+  --text-label: 15px;
+  --text-caption: 14px;
+
+  /* Layout */
+  --container: 1280px;
+  --gutter: 32px;
+  --measure: 720px;        /* comfortable reading width */
+  --radius: 10px;
+  --radius-lg: 12px;
+
+  /* Section spacing */
+  --space-section: 110px;
+  --space-block: 64px;
+}
+
+@media (max-width: 760px) {
+  :root {
+    --gutter: 18px;
+    --space-section: 80px;
+    --space-block: 48px;
+  }
+}

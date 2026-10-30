@@ -1,130 +1,178 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>More projects · Between the Boxes</title>
-<meta name="description" content="A strategy and learning studio by Giselle Tran: strategy, learning design, AI adoption, and systems purpose-built for your people.">
-<link rel="canonical" href="https://betweentheboxes.com/projects.html">
-<!-- ===== Fonts, favicon, and page styles ===== -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..800,0..100,0..1;1,9..144,300..800,0..100,0..1&amp;family=Instrument+Sans:wght@400;500;600&amp;family=Courier+Prime:wght@400;700&amp;family=Special+Elite&amp;display=swap" rel="stylesheet">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect x=%272%27 y=%2711%27 width=%2710%27 height=%2710%27 rx=%272%27 fill=%27none%27 stroke=%27%235E2E8F%27 stroke-width=%273%27/%3E%3Crect x=%2713.5%27 y=%276%27 width=%275%27 height=%2720%27 rx=%271.5%27 fill=%27%23FCF434%27 stroke=%27%235E2E8F%27 stroke-width=%272.5%27/%3E%3Crect x=%2720%27 y=%2711%27 width=%2710%27 height=%2710%27 rx=%272%27 fill=%27none%27 stroke=%27%235E2E8F%27 stroke-width=%273%27/%3E%3C/svg%3E">
-<style>
-body{margin:0;background:#F3EEE4}
-.cs{--ink:#1E1328;--paper:#FBF8F2;--cream:#F3EEE4;--strip:#F8F2DF;--yellow:#FCF434;--deep:#5E2E8F;--night:#22132F;--lav:#EAE1F0;--muted:#55505C;--rule:rgba(30,19,40,.22);background:var(--cream) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3CfeComponentTransfer%3E%3CfeFuncA type='table' tableValues='0 .07'/%3E%3C/feComponentTransfer%3E%3C/filter%3E%3Crect width='220' height='220' filter='url(%23n)'/%3E%3C/svg%3E");color:var(--ink);font-family:'Instrument Sans',system-ui,sans-serif;font-size:18px;line-height:1.65}
-.cs *{box-sizing:border-box} .cs a{color:inherit}
-.wrap{max-width:1240px;margin:0 auto;padding:0 32px}
-.read{max-width:700px}
-.serif{font-family:'Fraunces','Fraunces Variable',Georgia,serif;font-variation-settings:'SOFT' 100,'WONK' 1;font-weight:400;letter-spacing:-.02em;line-height:1.05;margin:0}
-.serif em{font-style:italic}
-.tagl{font-style:italic;font-size:17px;line-height:1.1;letter-spacing:0}
-.lbl{font-family:'Courier Prime',ui-monospace,monospace;font-size:15px;text-transform:uppercase;letter-spacing:.08em;margin:0}
-.strip{display:inline-block;font-family:'Special Elite','Courier Prime',monospace;background:var(--strip);color:var(--ink);padding:.05em .32em .1em;line-height:1.15;box-shadow:1px 2px 0 rgba(30,19,40,.16);transform:rotate(-2deg)}
-.strip.y{background:var(--yellow)}
-.u{position:relative;display:inline-block;z-index:0}
-.btn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:600;font-size:17px;padding:11px 20px;border:1px solid var(--ink);border-radius:999px}
-.btn.solid{background:var(--ink);color:var(--paper)!important}
-.btn:hover{background:var(--yellow);color:var(--ink)!important}
-.cs a:focus-visible{outline:3px solid var(--deep);outline-offset:3px;border-radius:6px}
-.chap{display:flex;align-items:baseline;gap:18px;margin-bottom:22px}
-.chap .num{font-family:'Courier Prime',monospace;font-size:18px;color:var(--deep)}
-.move{border-top:1px solid var(--ink);padding:30px 0;display:grid;grid-template-columns:70px 1fr;gap:8px 24px}
-.move:last-child{border-bottom:1px solid var(--ink)}
-.move .n{font-family:'Courier Prime',monospace;font-size:16px;color:var(--deep);padding-top:6px}
-.pull{font-family:'Fraunces','Fraunces Variable',Georgia,serif;font-variation-settings:'SOFT' 100,'WONK' 1;font-style:italic;font-size:clamp(2rem,4.4vw,3.6rem);line-height:1.08;letter-spacing:-.02em;margin:0}
-.flow{display:flex;flex-wrap:wrap;align-items:center;gap:12px}
-.fnode{border:1.5px solid var(--ink);border-radius:8px;padding:14px 16px;font-size:16px;line-height:1.35;max-width:200px;box-shadow:2px 3px 0 rgba(30,19,40,.12)}
-.fnode:nth-child(4n+1){transform:rotate(-1deg)} .fnode:nth-child(4n+3){transform:rotate(1deg)}
-.farrow{font-family:'Courier Prime',monospace;font-size:24px;color:var(--deep)}
-.map{display:grid;grid-template-columns:1fr 40px 1fr;gap:0 18px;align-items:start;border-top:1px solid rgba(255,255,255,.3);padding:22px 0}
-.map .arr{font-family:'Courier Prime',monospace;color:var(--yellow);font-size:22px;text-align:center}
-.nope{position:relative;display:inline-block}
-.nope{opacity:.85}.nope::after{content:"";position:absolute;left:-6px;right:-6px;top:50%;height:3px;background:var(--deep);border-radius:2px;transform:rotate(-4deg)}
-.next{display:block;text-decoration:none;border:1px solid var(--ink);border-radius:12px;padding:36px 40px;transition:background .15s,transform .15s}
-.next:hover{background:var(--yellow);transform:translateY(-3px)}
-
-.band{background:var(--lav);border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);position:relative}
-.tab{position:absolute;top:-1px;left:32px;transform:translateY(-100%);background:var(--lav);border:1px solid var(--ink);border-bottom:none;border-radius:8px 8px 0 0;padding:6px 16px}
-.crumb{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
-.crumb a{text-decoration:underline;text-underline-offset:3px}
-.q{padding-top:96px}
-.qhead{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;margin-bottom:18px}
-.phase{font-family:'Courier Prime',monospace;font-size:14px;text-transform:uppercase;letter-spacing:.08em;border:1px solid var(--deep);color:var(--deep);border-radius:999px;padding:3px 12px}
-.phase.dark{border-color:var(--yellow);color:var(--yellow)}
-.qtitle{font-family:'Fraunces','Fraunces Variable',Georgia,serif;font-variation-settings:'SOFT' 100,'WONK' 1;font-size:clamp(2.1rem,4vw,3.4rem);line-height:1.08;letter-spacing:-.02em;margin:0 0 22px;font-weight:400}
-.toc a{text-decoration:none;display:block;padding:9px 0;border-top:1px dashed var(--rule)}
-.toc a:hover{color:var(--deep)}
-.tile{flex:1 1 240px;border:1px solid var(--ink);border-radius:10px;padding:26px;background:var(--paper)}
-@media (max-width:760px){.cs dl>div,.cs .rstrip>div{flex:1 1 100%!important;border-left:none!important;padding-left:0!important;border-top:1px dashed rgba(30,19,40,.25)}.cs .rstrip>div:first-child,.cs dl>div:first-child{border-top:none}.toc{position:static!important}.wrap{padding:0 18px}.map{grid-template-columns:1fr;}.map .arr{text-align:left}.move{grid-template-columns:1fr}}
-
-.proj{border-bottom:1px solid var(--ink)}
-.proj summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:60px 1fr auto 44px;gap:18px;align-items:center;padding:28px 0}
-.proj summary::-webkit-details-marker{display:none}
-.proj .pn{color:var(--deep)}
-.ptag{display:block;color:var(--deep);font-size:14px;margin-bottom:6px}
-.pname{font-family:'Fraunces','Fraunces Variable',Georgia,serif;font-variation-settings:'SOFT' 100,'WONK' 1;font-size:clamp(1.6rem,3vw,2.5rem);letter-spacing:-.02em;line-height:1.1}
-.pnum{font-size:22px;color:var(--deep);text-align:right}
-.plus{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border:1px solid var(--ink);border-radius:50%;font-size:22px;font-family:'Courier Prime',monospace}
-.proj summary:hover .pname{color:var(--deep)} .proj summary:hover .plus,.proj[open] .plus{background:var(--yellow)}
-.proj[open] .plus{transform:rotate(45deg)}
-.pbody{display:grid;grid-template-columns:60px repeat(3,1fr) 44px;gap:28px;padding:0 0 34px}
-.pbody>div:first-child{grid-column:2}
-.pbody p{margin:0;font-size:17px} .pbody .ph{color:var(--deep);font-size:14px;margin-bottom:8px}
-@media (max-width:760px){.proj summary{grid-template-columns:30px 1fr 40px}.pnum{display:none}.pbody{grid-template-columns:1fr}.pbody>div:first-child{grid-column:1}}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>More projects · Between the Boxes</title>
+  <meta name="description" content="A strategy and learning studio by Giselle Tran: strategy, learning design, AI adoption, and systems purpose-built for your people.">
+  <link rel="canonical" href="https://betweentheboxes.com/projects.html">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..800,0..100,0..1;1,9..144,300..800,0..100,0..1&amp;family=Instrument+Sans:wght@400;500;600&amp;family=Courier+Prime:wght@400;700&amp;family=Special+Elite&amp;display=swap">
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/case-study.css">
+  <script src="assets/js/main.js" defer></script>
 </head>
 <body>
-<!-- ===== Page content: edit text between the tags below ===== -->
-<div class="cs">
-<header class="wrap" style="display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;justify-content:space-between;padding-top:26px;padding-bottom:26px;">
-<a href="index.html" style="text-decoration:none;display:flex;align-items:center;gap:12px;"><svg viewBox="0 0 41 31" width="37" height="28" aria-hidden="true" style="vertical-align:middle;overflow:visible"><path d="M1.7 9.4 Q6.7 9.3 13.2 9.3 Q12.5 14.4 13.1 20.8 Q7.1 21.4 1.3 21.0 Q0.9 14.8 1.7 9.4 " fill="none" stroke="#5E2E8F" stroke-width="2.4" stroke-linejoin="round"/><path d="M17.1 3.5 Q20.2 3.3 23.5 3.6 Q24.2 15.5 24.2 26.9 Q20.2 27.1 16.8 27.1 Q16.9 15.7 17.1 3.5 " fill="#FCF434" stroke="#5E2E8F" stroke-width="2" stroke-linejoin="round"/><path d="M28.2 10.7 Q33.1 9.7 39.1 9.8 Q39.1 15.6 39.8 20.3 Q33.7 20.6 28.6 20.7 Q28.6 15.5 28.2 10.7 " fill="none" stroke="#5E2E8F" stroke-width="2.4" stroke-linejoin="round"/></svg><span style="display:flex;flex-direction:column;gap:5px;"><span class="serif" style="font-size:27px;color:var(--deep);">Between the Boxes</span><span class="serif tagl" style="color:#55505C;">a strategy &amp; learning studio</span></span></a>
-<nav aria-label="Main" style="display:flex;flex-wrap:wrap;gap:10px 14px;align-items:center;"><a href="index.html#work" class="btn">← All work</a><a href="index.html#contact" class="btn solid">Let's talk</a></nav>
-</header>
 
-<div class="wrap" style="padding-top:8px;padding-bottom:56px;">
-<p class="crumb lbl" style="font-size:14px;"><a href="index.html#work">Work</a><span aria-hidden="true">→</span><span>More projects</span></p></div>
-<section class="band" aria-label="More projects">
-<span class="tab lbl" style="color:var(--deep);font-size:14px;">More projects</span>
-<div class="wrap" style="padding-top:56px;padding-bottom:52px;display:flex;flex-wrap:wrap;gap:24px 60px;align-items:flex-end;justify-content:space-between;">
-<div><h1 class="serif" style="font-size:clamp(2.6rem,5vw,4.6rem);max-width:820px;margin-bottom:20px;">Smaller stories, <em>same approach</em></h1>
-<p style="margin:0;max-width:640px;font-size:20px;">Each one started with a real problem and ended with something people kept using.</p></div>
-</div></section>
-<section class="wrap" style="padding-top:48px;" aria-label="Projects">
-<div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 24px;padding-bottom:14px;"><p class="lbl" style="color:var(--deep);">5 projects</p><p class="lbl" style="color:var(--muted);">Open any one for the problem, approach, and result ↓</p></div>
-<div style="border-top:1px solid var(--ink);"><details class="proj">
-<summary><span class="lbl pn">01</span><span><span class="lbl ptag">AI learning tool · USC</span><span class="pname">A coaching simulator for new managers</span></span><span class="pnum serif">1 decision, 3 levels of impact</span><span class="plus" aria-hidden="true">+</span></summary>
-<div class="pbody"><div><p class="lbl ph">Problem</p><p>First-time managers can't see how one decision lands on the person, the team, and the business at the same time.</p></div><div><p class="lbl ph">Approach</p><p>An AI practice space with realistic personas, branching scenarios, and consequences shown at all three levels.</p></div><div><p class="lbl ph">Result</p><p>A working prototype, with a roadmap toward a fuller leadership practice ground.</p></div></div>
-</details><details class="proj">
-<summary><span class="lbl pn">02</span><span><span class="lbl ptag">Learning in the product</span><span class="pname">Help at the moment of need</span></span><span class="pnum serif">3x feature use</span><span class="plus" aria-hidden="true">+</span></summary>
-<div class="pbody"><div><p class="lbl ph">Problem</p><p>Customers missed useful features and opened support cases they didn't need to.</p></div><div><p class="lbl ph">Approach</p><p>An in-product messaging program: guidance where people work, a resource center, and a "hidden gems" spotlight on the product homepage.</p></div><div><p class="lbl ph">Result</p><p>One key feature tripled in use, with 20% fewer support cases than expected. In-app invites drove 2–3x more event sign-ups.</p></div></div>
-</details><details class="proj">
-<summary><span class="lbl pn">03</span><span><span class="lbl ptag">Training</span><span class="pname">Repeatable onboarding for a writing team</span></span><span class="pnum serif">15+ new hires</span><span class="plus" aria-hidden="true">+</span></summary>
-<div class="pbody"><div><p class="lbl ph">Problem</p><p>New technical writers had a lot of tools and workflows to learn at once, and training lived in different places.</p></div><div><p class="lbl ph">Approach</p><p>I built one onboarding path with a single source of truth for training: recorded walkthroughs and a safe practice copy of the real docs to learn on.</p></div><div><p class="lbl ph">Result</p><p>A repeatable process the tech writing team used for its next 15+ new hires, with one place to learn everything.</p></div></div>
-</details><details class="proj">
-<summary><span class="lbl pn">04</span><span><span class="lbl ptag">Frameworks</span><span class="pname">A consent framework for user data</span></span><span class="pnum serif">3 tiers, 1 rule</span><span class="plus" aria-hidden="true">+</span></summary>
-<div class="pbody"><div><p class="lbl ph">Problem</p><p>Growth teams wanted to use product data in new ways, and privacy rules differed by country.</p></div><div><p class="lbl ph">Approach</p><p>Three tiers that match each use of customer data to the consent it needs, country by country, with clear human and platform responsibilities.</p></div><div><p class="lbl ph">Result</p><p>If it stays in the product and serves the customer, it's covered. If it leaves for commercial use, consent comes first.</p></div></div>
-</details><details class="proj">
-<summary><span class="lbl pn">05</span><span><span class="lbl ptag">Curriculum · USC</span><span class="pname">Critical media literacy, grades 7–8</span></span><span class="pnum serif">Social media, search & AI</span><span class="plus" aria-hidden="true">+</span></summary>
-<div class="pbody"><div><p class="lbl ph">Problem</p><p>Students meet social media, search, and AI every day, often without the tools to question what they see.</p></div><div><p class="lbl ph">Approach</p><p>A curriculum unit grounded in learning and motivation research, with adaptations for different classrooms.</p></div><div><p class="lbl ph">Result</p><p>A complete unit, ready to pilot with real students.</p></div></div>
-</details></div>
-</section>
-<section class="wrap" style="padding-top:96px;">
-<p class="lbl" style="color:var(--deep);margin-bottom:18px;">The bigger stories</p>
-<div style="display:flex;flex-wrap:wrap;gap:14px;">
-<a href="ai-transformation.html" class="next" style="flex:1 1 260px;padding:26px 28px;"><p class="lbl" style="color:var(--deep);font-size:14px;margin-bottom:8px;">Case study 1</p><p class="serif" style="font-size:24px;line-height:1.15;">AI transformation as a culture shift <span aria-hidden="true">→</span></p></a><a href="workshop.html" class="next" style="flex:1 1 260px;padding:26px 28px;"><p class="lbl" style="color:var(--deep);font-size:14px;margin-bottom:8px;">Case study 2</p><p class="serif" style="font-size:24px;line-height:1.15;">Ten experts, one roadmap, four days <span aria-hidden="true">→</span></p></a><a href="ai-help-search.html" class="next" style="flex:1 1 260px;padding:26px 28px;"><p class="lbl" style="color:var(--deep);font-size:14px;margin-bottom:8px;">Case study 3</p><p class="serif" style="font-size:24px;line-height:1.15;">Help that answers in the customer's own words <span aria-hidden="true">→</span></p></a><a href="localization.html" class="next" style="flex:1 1 260px;padding:26px 28px;"><p class="lbl" style="color:var(--deep);font-size:14px;margin-bottom:8px;">Case study 4</p><p class="serif" style="font-size:24px;line-height:1.15;">8 locales, one program <span aria-hidden="true">→</span></p></a>
-</div></section>
-<section class="wrap" style="padding-top:96px;padding-bottom:110px;">
-<div style="border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);padding:34px 0;display:flex;flex-wrap:wrap;gap:20px 48px;align-items:center;justify-content:space-between;">
-<p class="serif" style="font-size:clamp(1.8rem,3.4vw,2.6rem);max-width:720px;">Have a problem that looks like one of these?</p>
-<div style="display:flex;gap:12px;flex-wrap:wrap;"><a href="index.html#work" class="btn">← All work</a><a href="index.html#contact" class="btn solid">Let's talk</a></div></div>
-</section>
-<footer style="background:var(--night);color:#D8CCE6;margin-top:0;">
-<div style="background:var(--paper);"><svg viewBox="0 0 1400 90" preserveAspectRatio="none" style="display:block;width:100%;height:90px" aria-hidden="true"><path d="M43.8 12.3 Q60.8 7.1 160.8 13.0 Q269.7 7.7 369.7 13.9 Q498.4 17.0 598.4 17.2 Q677.1 20.8 777.1 11.8 Q872.2 15.7 972.2 15.0 Q1081.8 20.1 1181.8 19.3 Q1281.0 17.0 1381.0 8.7 " fill="none" stroke="#1E1328" stroke-width="4.3" stroke-linecap="round" opacity="0.81"/><path d="M59.6 16.6 Q88.6 11.9 188.6 16.0 Q299.1 13.3 399.1 10.0 Q495.3 6.1 595.3 17.2 Q694.8 9.5 794.8 12.7 Q865.1 6.5 965.1 13.4 Q1078.0 20.9 1178.0 17.8 Q1265.4 10.0 1365.4 13.0 " fill="none" stroke="#1E1328" stroke-width="3.4" stroke-linecap="round" opacity="0.90"/><path d="M57.5 11.2 Q93.0 9.2 193.0 10.8 Q280.6 15.6 380.6 11.2 Q499.8 12.5 599.8 12.4 Q677.3 22.2 777.3 16.3 Q879.4 16.1 979.4 16.1 Q1097.8 21.2 1197.8 17.4 Q1265.0 19.4 1365.0 12.7 " fill="none" stroke="#1E1328" stroke-width="3.5" stroke-linecap="round" opacity="0.59"/><path d="M38.1 10.5 Q97.3 8.8 197.3 9.9 Q286.4 5.9 386.4 8.0 Q493.9 6.8 593.9 12.4 Q699.0 20.7 799.0 15.4 Q894.1 9.5 994.1 12.2 Q1085.4 7.2 1185.4 18.2 Q1260.3 13.4 1360.3 13.8 " fill="none" stroke="#1E1328" stroke-width="2.7" stroke-linecap="round" opacity="0.59"/><path d="M20.6 38.1 Q66.8 33.9 166.8 34.3 Q262.0 40.5 362.0 35.8 Q478.3 31.5 578.3 40.3 Q660.9 46.5 760.9 42.4 Q889.6 37.6 989.6 36.0 Q1069.1 40.6 1169.1 43.3 Q1286.8 35.0 1386.8 43.7 " fill="none" stroke="#FCF434" stroke-width="5.0" stroke-linecap="round" opacity="0.89"/><path d="M48.4 42.5 Q70.4 35.1 170.4 40.2 Q285.8 31.5 385.8 34.3 Q488.8 35.7 588.8 42.3 Q661.7 39.1 761.7 45.2 Q860.5 48.2 960.5 38.4 Q1091.2 35.1 1191.2 36.4 Q1291.8 42.2 1391.8 44.8 " fill="none" stroke="#FCF434" stroke-width="4.6" stroke-linecap="round" opacity="0.74"/><path d="M39.2 42.4 Q96.6 42.9 196.6 44.9 Q268.7 44.5 368.7 39.7 Q492.9 45.2 592.9 38.0 Q668.0 48.5 768.0 38.8 Q883.9 48.0 983.9 42.7 Q1093.2 33.3 1193.2 35.8 Q1263.8 45.5 1363.8 35.8 " fill="none" stroke="#FCF434" stroke-width="4.6" stroke-linecap="round" opacity="0.94"/><path d="M39.4 38.8 Q78.1 33.4 178.1 34.2 Q261.2 42.7 361.2 40.3 Q462.7 38.8 562.7 44.5 Q667.0 34.8 767.0 37.0 Q888.3 35.3 988.3 41.0 Q1089.6 38.5 1189.6 35.6 Q1263.6 37.4 1363.6 39.5 " fill="none" stroke="#FCF434" stroke-width="4.0" stroke-linecap="round" opacity="0.91"/><path d="M25.2 69.3 Q79.9 66.6 179.9 66.3 Q299.3 64.9 399.3 62.2 Q499.8 71.4 599.8 62.1 Q681.1 70.1 781.1 66.7 Q887.0 66.3 987.0 66.7 Q1068.6 58.9 1168.6 66.7 Q1290.1 62.0 1390.1 69.3 " fill="none" stroke="#5E2E8F" stroke-width="3.8" stroke-linecap="round" opacity="0.77"/><path d="M45.6 69.3 Q82.3 68.0 182.3 66.1 Q279.5 69.5 379.5 65.4 Q478.7 65.6 578.7 71.3 Q672.0 72.8 772.0 71.3 Q889.6 67.1 989.6 71.3 Q1066.4 59.5 1166.4 61.5 Q1282.3 58.3 1382.3 62.9 " fill="none" stroke="#5E2E8F" stroke-width="2.7" stroke-linecap="round" opacity="0.82"/><path d="M47.0 69.2 Q93.8 69.9 193.8 67.9 Q294.3 72.9 394.3 71.6 Q491.2 74.1 591.2 64.8 Q680.5 74.8 780.5 70.0 Q893.5 64.8 993.5 66.2 Q1086.4 60.5 1186.4 63.8 Q1271.1 57.4 1371.1 66.6 " fill="none" stroke="#5E2E8F" stroke-width="3.6" stroke-linecap="round" opacity="0.56"/><path d="M19.9 67.0 Q79.5 58.2 179.5 71.8 Q268.5 74.5 368.5 61.3 Q489.4 57.7 589.4 69.3 Q689.2 59.3 789.2 65.1 Q863.5 71.7 963.5 63.1 Q1094.0 73.5 1194.0 66.8 Q1272.0 58.6 1372.0 60.7 " fill="none" stroke="#5E2E8F" stroke-width="4.2" stroke-linecap="round" opacity="0.72"/></svg></div>
-<div class="wrap" style="padding-top:30px;padding-bottom:30px;display:flex;flex-wrap:wrap;gap:18px 32px;justify-content:space-between;align-items:center;">
-<span style="display:flex;align-items:center;gap:10px;"><svg viewBox="0 0 41 31" width="29" height="22" aria-hidden="true" style="vertical-align:middle;overflow:visible"><path d="M1.3 10.7 Q7.2 10.3 13.2 10.5 Q12.9 16.7 12.3 21.6 Q6.4 21.0 1.3 21.6 Q1.4 15.7 1.3 10.7 " fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round"/><path d="M16.6 4.0 Q20.4 3.8 24.5 3.5 Q24.7 15.8 24.4 26.9 Q20.5 27.6 17.0 27.4 Q17.1 15.8 16.6 4.0 " fill="#FCF434" stroke="#5E2E8F" stroke-width="2" stroke-linejoin="round"/><path d="M27.4 9.5 Q32.8 9.0 38.3 9.5 Q38.2 14.3 38.7 20.7 Q33.2 19.9 28.4 20.7 Q28.3 15.1 27.4 9.5 " fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round"/></svg><span style="display:flex;flex-direction:column;gap:5px;"><span class="serif" style="font-size:24px;color:#fff;">Between the Boxes</span><span class="serif tagl" style="color:#D8CCE6;">a strategy &amp; learning studio</span></span><span class="lbl" style="margin-left:18px;">betweentheboxes.com</span></span>
-<span class="lbl">© 2026 · San Jose, California</span>
-</div></footer>
-</div>
+  <!-- ===== Header ===== -->
+  <header class="site-header container">
+    <a class="brand" href="index.html">
+      <img class="brand__mark" src="assets/img/logo-mark.svg" alt="" width="37" height="28">
+      <span class="brand__text">
+        <span class="brand__name">Between the Boxes</span>
+        <span class="brand__tagline">a strategy &amp; learning studio</span>
+      </span>
+    </a>
+    <nav class="btn-row" aria-label="Main">
+      <a class="btn btn--small" href="index.html#work">← All work</a>
+      <a class="btn btn--solid btn--small" href="index.html#contact">Let's talk</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <nav class="crumbs container label label--small" aria-label="Breadcrumb">
+      <ol><li><a href="index.html#work">Work</a></li><li aria-current="page">More projects</li></ol>
+    </nav>
+
+    <section class="case-file" aria-labelledby="page-title">
+      <p class="case-file__tab label label--brand label--small">More projects</p>
+      <div class="case-file__main container">
+        <h1 id="page-title" class="display-m">Smaller stories, <em>same approach</em></h1>
+        <p class="lede">Each one started with a real problem and ended with something people kept using.</p>
+      </div>
+    </section>
+
+    <section class="container list-section" aria-label="Projects">
+      <div class="list-head">
+        <p class="label label--brand">5 projects</p>
+        <p class="label muted">Open any one for the problem, approach, and result ↓</p>
+      </div>
+      <div class="projects">
+        <details class="project" id="project-1">
+          <summary class="project__summary">
+            <span class="label project__num">01</span>
+            <span><span class="label project__tag">AI learning tool · USC</span><span class="serif project__name">A coaching simulator for new managers</span></span>
+            <span class="serif project__headline">1 decision, 3 levels of impact</span>
+            <span class="toggle" aria-hidden="true">+</span>
+          </summary>
+          <div class="project__body">
+            <div><h3>Problem</h3><p>First-time managers can't see how one decision lands on the person, the team, and the business at the same time.</p></div>
+            <div><h3>Approach</h3><p>An AI practice space with realistic personas, branching scenarios, and consequences shown at all three levels.</p></div>
+            <div><h3>Result</h3><p>A working prototype, with a roadmap toward a fuller leadership practice ground.</p></div>
+          </div>
+        </details>
+        <details class="project" id="project-2">
+          <summary class="project__summary">
+            <span class="label project__num">02</span>
+            <span><span class="label project__tag">Learning in the product</span><span class="serif project__name">Help at the moment of need</span></span>
+            <span class="serif project__headline">3x feature use</span>
+            <span class="toggle" aria-hidden="true">+</span>
+          </summary>
+          <div class="project__body">
+            <div><h3>Problem</h3><p>Customers missed useful features and opened support cases they didn't need to.</p></div>
+            <div><h3>Approach</h3><p>An in-product messaging program: guidance where people work, a resource center, and a "hidden gems" spotlight on the product homepage.</p></div>
+            <div><h3>Result</h3><p>One key feature tripled in use, with 20% fewer support cases than expected. In-app invites drove 2–3x more event sign-ups.</p></div>
+          </div>
+        </details>
+        <details class="project" id="project-3">
+          <summary class="project__summary">
+            <span class="label project__num">03</span>
+            <span><span class="label project__tag">Training</span><span class="serif project__name">Repeatable onboarding for a writing team</span></span>
+            <span class="serif project__headline">15+ new hires</span>
+            <span class="toggle" aria-hidden="true">+</span>
+          </summary>
+          <div class="project__body">
+            <div><h3>Problem</h3><p>New technical writers had a lot of tools and workflows to learn at once, and training lived in different places.</p></div>
+            <div><h3>Approach</h3><p>I built one onboarding path with a single source of truth for training: recorded walkthroughs and a safe practice copy of the real docs to learn on.</p></div>
+            <div><h3>Result</h3><p>A repeatable process the tech writing team used for its next 15+ new hires, with one place to learn everything.</p></div>
+          </div>
+        </details>
+        <details class="project" id="project-4">
+          <summary class="project__summary">
+            <span class="label project__num">04</span>
+            <span><span class="label project__tag">Frameworks</span><span class="serif project__name">A consent framework for user data</span></span>
+            <span class="serif project__headline">3 tiers, 1 rule</span>
+            <span class="toggle" aria-hidden="true">+</span>
+          </summary>
+          <div class="project__body">
+            <div><h3>Problem</h3><p>Growth teams wanted to use product data in new ways, and privacy rules differed by country.</p></div>
+            <div><h3>Approach</h3><p>Three tiers that match each use of customer data to the consent it needs, country by country, with clear human and platform responsibilities.</p></div>
+            <div><h3>Result</h3><p>If it stays in the product and serves the customer, it's covered. If it leaves for commercial use, consent comes first.</p></div>
+          </div>
+        </details>
+        <details class="project" id="project-5">
+          <summary class="project__summary">
+            <span class="label project__num">05</span>
+            <span><span class="label project__tag">Curriculum · USC</span><span class="serif project__name">Critical media literacy, grades 7–8</span></span>
+            <span class="serif project__headline">Social media, search &amp; AI</span>
+            <span class="toggle" aria-hidden="true">+</span>
+          </summary>
+          <div class="project__body">
+            <div><h3>Problem</h3><p>Students meet social media, search, and AI every day, often without the tools to question what they see.</p></div>
+            <div><h3>Approach</h3><p>A curriculum unit grounded in learning and motivation research, with adaptations for different classrooms.</p></div>
+            <div><h3>Result</h3><p>A complete unit, ready to pilot with real students.</p></div>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section class="container section">
+      <p class="label label--brand eyebrow">The bigger stories</p>
+      <div class="link-card-row">
+        <a class="link-card link-card--small" href="case-studies/ai-transformation.html">
+          <p class="label label--brand label--small">Case study 1</p>
+          <p class="serif link-card__title">AI transformation as a culture shift <span aria-hidden="true">→</span></p>
+        </a>
+        <a class="link-card link-card--small" href="case-studies/workshop.html">
+          <p class="label label--brand label--small">Case study 2</p>
+          <p class="serif link-card__title">Ten experts, one roadmap, four days <span aria-hidden="true">→</span></p>
+        </a>
+        <a class="link-card link-card--small" href="case-studies/ai-help-search.html">
+          <p class="label label--brand label--small">Case study 3</p>
+          <p class="serif link-card__title">Help that answers in the customer's own words <span aria-hidden="true">→</span></p>
+        </a>
+        <a class="link-card link-card--small" href="case-studies/localization.html">
+          <p class="label label--brand label--small">Case study 4</p>
+          <p class="serif link-card__title">8 locales, one program <span aria-hidden="true">→</span></p>
+        </a>
+      </div>
+    </section>
+
+    <section class="case-end container section--end">
+      <div class="fit">
+        <p class="serif title-m fit__text">Have a problem that looks like one of these?</p>
+        <div class="btn-row">
+          <a class="btn" href="index.html#work">← All work</a>
+          <a class="btn btn--solid" href="index.html#contact">Let's talk</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="site-footer__stripes" aria-hidden="true"></div>
+    <div class="site-footer__inner container">
+      <a class="brand" href="index.html">
+        <img class="brand__mark" src="assets/img/logo-mark-light.svg" alt="" width="29" height="22">
+        <span class="brand__text">
+          <span class="brand__name">Between the Boxes</span>
+          <span class="brand__tagline">a strategy &amp; learning studio</span>
+        </span>
+        <span class="label label--small site-footer__url">betweentheboxes.com</span>
+      </a>
+      <div class="site-footer__meta">
+        <p class="label label--small">© 2026 · San Jose, California</p>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>
